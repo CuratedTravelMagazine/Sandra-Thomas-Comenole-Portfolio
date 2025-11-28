@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sandra Thomas-Comenole</title>
+
+  <!-- Klein bold + regular -->
+  <link rel="stylesheet" href="https://use.typekit.net/your-kit-id.css"> <!-- if you have a Typekit kit -->
+  <!-- OR use this free CDN version that works instantly -->
+  <link href="https://fonts.cdnfonts.com/css/klein" rel="stylesheet">
+
+  <style>
+    :root {
+      --sage: #A4B792;
+      --forest: #3D5919;
+      --charcoal: #342E30;
+      --cream: #FBFBFB;
+    }
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { 
+      font-family: 'Klein', sans-serif; 
+      background: var(--cream); 
+      color: var(--charcoal); 
+      line-height: 1.7;
+    }
+    h1, h2, h3, .section-title { 
+      font-family: 'Klein', sans-serif; 
+      font-weight: 900; /* Klein Bold */
+      letter-spacing: -0.02em;
+    }
+
+    /* HERO – your animated venn.gif only */
+    header {
+      position: relative;
+      height: 100vh;
+      min-height: 720px;
+      background: #000;
+      overflow: hidden;
+    }
+    .hero-gif {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* Navigation */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 1000;
+      padding: 2rem 6%;
+      background: transparent;
+      transition: background 0.4s;
+    }
+    nav.scrolled { background: rgba(251,251,251,0.96); backdrop-filter: blur(12px); }
+nav.scrolled a { color: var(--charcoal);}
+    nav ul { display:flex; justify-content:center; gap:4.5rem; list-style:none; flex-wrap:wrap; }
+    nav a {
+      color: #a4b792;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      font-size: 0.92rem;
+text-decoration: none;
+	
+    }
+
+    section { padding: 160px 8% 120px; max-width: 1500px; margin:0 auto; }
+
+    .section-title {
+      font-size: clamp(4rem, 10vw, 9rem);
+      text-align: center;
+      margin-bottom: 4rem;
+      color: var(--forest);
+    }
+
+    /* Bio */
+    .bio-grid { 
+      display:grid; 
+      grid-template-columns:1fr 1.4fr; 
+      gap:7rem; 
+      align-items:center; 
+    }
+    .bio-grid img { 
+      width:100%; 
+      border-radius:6px; 
+      box-shadow: 30px 30px 0 var(--sage); 
+    }
+
+    /* Cards */
+    .grid-3 {
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(360px,1fr));
+      gap:3.5rem;
+      margin-top:4rem;
+    }
+    .card {
+      background:#fff;
+      border-radius:10px;
+      overflow:hidden;
+      box-shadow:0 25px 60px rgba(0,0,0,0.1);
+      transition:transform .4s;
+    }
+    .card:hover { transform:translateY(-18px); }
+    .card img { width:100%; height:320px; object-fit:cover; }
+    .card-body { padding:2.2rem; }
+    .card-title { font-size:1.8rem; margin-bottom:0.6rem; color:var(--forest); }
+    .card a { color:var(--sage); font-weight:600; }
+
+    .coming-soon {
+      text-align:center;
+      font-size:2.2rem;
+      opacity:0.3;
+      font-weight:300;
+      margin:8rem 0;
+    }
+
+    footer { background:var(--charcoal); color:#ccc; text-align:center; padding:5rem; }
+  </style>
+</head>
+<body>
+
+  <!-- HERO – your venn.gif (animated) -->
+  <header>
+    <img src="venn.gif" alt="Venn Diagram" class="hero-gif">
+  </header>
+
+  <nav id="nav">
+    <ul>
+      <li><a href="#bio">Bio</a></li>
+      <li><a href="#creative">Creative</a></li>
+      <li><a href="#analytical">Analytical</a></li>
+      <li><a href="#leadership">Empathetic Leadership</a></li>
+      <li><a href="#casestudies">Case Studies</a></li>
+    </ul>
+  </nav>
+
+  <!-- BIO -->
+  <section id="bio">
+    <h2 class="section-title">BIO</h2>
+    <div class="bio-grid">
+      <img src="sandra_headshot.jpg" alt="Sandra Thomas-Comenole">
+      <div>
+        <p><strong>Sandra Thomas-Comenole</strong> is a marketing strategist and behavioral growth expert who thrives at the intersection of creativity, analytics, and empathy. One CEO called her a “miracle worker” for turning companies around, with two decades of helping brands across hospitality, travel, SaaS, luxury lifestyle, and biotech grow with purpose.</p>
+
+<p>She builds human-centered, data-driven strategies that deliver measurable impact: 3x revenue growth, multi-million-dollar turnarounds, 254% organic traffic increases, 153% conversion lifts, and viral campaigns reaching hundreds of thousands. She leads global teams of 20+ and crafts strategies that balance bold ideas with disciplined execution.</p>
+
+<p>Sandra holds an M.S. and B.S. in Economics from Rensselaer Polytechnic Institute and is based in Troy, NY, usually with an iced in hand, and a sunrise or sunset in a new city reminding her why she loves travel.</p>
+       
+      </div>
+    </div>
+  </section>
+
+  <!-- CREATIVE -->
+  <section id="creative" style="background:#fdfdfb;">
+    <h2 class="section-title">CREATIVE</h2>
+    <div class="grid-3">
+      <div class="card">
+        <img src="Curated-Nov-cover.jpg" alt="Curated Issue 1">
+        <div class="card-body">
+          <h3 class="card-title">Curated Travel Stories</h3>
+          <p>Nov/Dec 2025</p>
+          <a href="https://heyzine.com/flip-book/154bf6a9db.html" target="_blank">View Issue →</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="Curated-Oct-cover.jpg" alt="Curated Issue 2">
+        <div class="card-body">
+          <h3 class="card-title">Curated Travel Stories</h3>
+          <p>Oct 2025</p>
+          <a href="https://heyzine.com/flip-book/e389ad3e40.html" target="_blank">View Issue →</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="Curated-Sept-cover.jpg" alt="Curated Issue 3">
+        <div class="card-body">
+          <h3 class="card-title">Curated Travel Stories</h3>
+          <p>Sept 2025</p>
+          <a href="https://heyzine.com/flip-book/2d575bc570.html" target="_blank">View Issue →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ANALYTICAL -->
+  <section id="analytical">
+    <h2 class="section-title">ANALYTICAL</h2>
+    <div class="grid-3">
+      <div class="card">
+        <img src="sentiment.jpg" alt="">
+        <div class="card-body">
+          <h3 class="card-title">Critical Industry Analysis – Travel Sentiment Surveys</h3>
+          <p>Challenged assumptions behind commonly cited travel-sentiment surveys, demonstrating how consumer signals can diverge from reported data and how marketers can interpret insights more accurately.</p>
+          <a href="https://www.travelweekly.com/Articles/Travel-sentiment-surveys-How-could-they-get-it-so-wrong" target="_blank">Read Article →</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="bemarketingcover.jpg" alt="">
+        <div class="card-body">
+          <h3 class="card-title">Behavioral Economics in Marketing Podcast</h3>
+          <p>Breaks down how behavioral economics shapes marketing strategy, customer behavior, and leadership decisions. Turns complex insights into practical guidance for marketers and leaders, reaching audiences in 76 countries and 15 languages.</p>
+          <a href="https://www.behavioraleconomicsinmarketing.com" target="_blank">Listen →</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="cx.jpg" alt="">
+        <div class="card-body">
+          <h3 class="card-title">CMSWire Articles</h3>
+          <p>Explores the intersection of behavioral economics, marketing, and leadership to help companies improve the customer experience (CX). Analyzes trends, uncovers insights, and translates complex data into actionable strategies for marketers and leaders.</p>
+          <a href="https://www.cmswire.com/author/sandra-thomas-comenole/" target="_blank">Read Articles →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EMPATHETIC LEADERSHIP -->
+<section id="leadership" style="background:#fdfdfb;">
+    <h2 class="section-title">EMPATHETIC LEADERSHIP</h2>
+    <div class="bio-grid">
+      <img src="humanfirst.jpg" alt="Sandra Thomas-Comenole">
+      <div>
+        <p><strong>Human First. Growth Obsessed. The Impact of Empathy in Leadership</strong> Leadership is forged in moments—triumphant, devastating, and defining. In Human First. Growth Obsessed., Sandra Thomas‑Comenole draws on her experiences leading global teams, turning around failing companies, and navigating personal and professional crises to show that you don’t have to choose between caring deeply and achieving extraordinary results. The book brings behavioral economics to the real work of leadership, offering actionable frameworks, practical rituals, and playbooks to help leaders unlock potential, prevent disengagement, and build growth-obsessed cultures.</p>
+
+<br>
+
+<p><a href="excerpt.pdf" target="_blank">Read Excerpt →</a> | <a href="https://www.amazon.com/Human-First-Growth-Obsessed-Leadership/dp/B0G3XNQKSS" target="_blank">Purchase Book →</a></p>
+       
+      </div>
+    </div>
+  </section>
+
+
+  <!-- CASE STUDIES -->
+  <section id="casestudies">
+    <p class="coming-soon">CASE STUDIES — coming soon</p>
+  </section>
+
+  <footer>
+    <p>© 2025 Sandra Thomas-Comenole • Troy, NY</p>
+  </footer>
+
+  <script>
+    window.addEventListener('scroll', () => {
+      document.getElementById('nav').classList.toggle('scrolled', window.scrollY > 100);
+    });
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        e.preventDefault();
+        document.querySelector(a.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  </script>
+</body>
+</html>
